@@ -6,12 +6,12 @@ class DbSettings implements SettingsInterface
     public static function get(): array
     {
         return [
-               'driver'        => getenv('DB_DRIVER'),
-               'host'          => getenv('DB_HOST'),
-               'port'          => getenv('DB_PORT'),
-               'dbname'        => getenv('DB_NAME'),
-               'user'          => getenv('DB_USER'),
-               'password'      => getenv('DB_PASSWORD'),
+               'driver'        => getenv('mysql'),
+               'host'          => getenv('127.0.0.1'),
+               'port'          => getenv('3306'),
+               'dbname'        => getenv('database'),
+               'user'          => getenv('pedro'),
+               'password'      => getenv('Su4_Fl4G_C@cthiorr0'),
                'service'       => true,
                'charset'       => 'UTF8',
                'driverOptions' => ['charset' => 'UTF8'],
